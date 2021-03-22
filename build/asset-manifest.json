@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ea7f711.chunk.css",
+    "main.js": "/static/js/main.b93b4199.chunk.js",
+    "main.js.map": "/static/js/main.b93b4199.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ca12565.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ca12565.js.map",
+    "static/js/2.3abbefd0.chunk.js": "/static/js/2.3abbefd0.chunk.js",
+    "static/js/2.3abbefd0.chunk.js.map": "/static/js/2.3abbefd0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9ea7f711.chunk.css.map": "/static/css/main.9ea7f711.chunk.css.map",
+    "static/js/2.3abbefd0.chunk.js.LICENSE.txt": "/static/js/2.3abbefd0.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/LabGrotesque-Regular.f45d8fdb.woff2",
+    "static/media/form-checkbox.scss": "/static/media/Vector.62a8ceae.svg",
+    "static/media/form.scss": "/static/media/close.3d4b33a0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ca12565.js",
+    "static/js/2.3abbefd0.chunk.js",
+    "static/css/main.9ea7f711.chunk.css",
+    "static/js/main.b93b4199.chunk.js"
+  ]
+}
