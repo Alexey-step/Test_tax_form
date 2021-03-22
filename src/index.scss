@@ -1,0 +1,28 @@
+@import "./scss/fonts.scss";
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Lab Grotesque", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  @include font(12px, 26px);
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: $opacity-black;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,208 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: $basic-white;
+  padding: 32px 16px 16px 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 453px;
+    padding: 32px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 552px;
+  }
+}
+
+.form__title {
+  font-weight: 500;
+  @include font(18px, 24px);
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include font(28px, 40px);
+  }
+}
+
+.form__text {
+  color: $basic-grey;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    @include font(14px, 24px);
+  }
+}
+
+.form__label {
+  font-weight: 500;
+  @include font(14px, 24px);
+  color: $basic-black;
+  margin-bottom: 8px;
+}
+
+.form__field {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  outline: none;
+
+  &::placeholder {
+    @include font(14px, 24px);
+    color: $lighten-grey;
+  }
+
+  &:hover {
+    border: 1px solid $basic-black;
+  }
+
+  &:disabled {
+    border: 1px solid $basic-grey;
+  }
+
+  &--error {
+    border: 1px solid $basic-red;
+  }
+}
+
+.form__calc-btn {
+  font-weight: 500;
+  @include font(14px, 24px);
+  color: $basic-red;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 24px;
+  padding: 0;
+  align-self: flex-start;
+  cursor: pointer;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    color: $normal-orange;
+  }
+
+  &:active {
+    color: $basic-red;
+  }
+}
+
+.radio__text {
+  font-weight: 500;
+  @include font(14px, 24px);
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 32px;
+  }
+}
+
+.form__group {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.radio__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  background-color: $grey-normal;
+  padding: 6px 12px;
+  border-radius: 25%/50%;
+  @include font(14px, 24px);
+  color: $basic-black;
+  margin-right: 8px;
+}
+
+.radio__input:checked + .radio__label {
+  background: $orange-gradient;
+  color: $basic-white;
+}
+
+.radio__input:hover + .radio__label {
+  background: $basic-red;
+  box-shadow: 0px 0px 24px $opacity-red;
+  color: $basic-white;
+}
+
+.radio__input:disabled + .radio__label {
+  background: $lighten-grey;
+}
+
+.form__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: $basic-white;
+  border: none;
+  background-image: url("./close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    right: 12px;
+  }
+
+  @media (min-width: $desctop-width) {
+    right: 16px;
+  }
+}
+
+.form__submit-btn {
+  font-weight: 500;
+  @include font(12px, 16px);
+  background: $orange-gradient;
+  box-shadow: 0px 0px 24px $opacity-red;
+  border: none;
+  border-radius: 6px;
+  color: $basic-white;
+  padding: 12px 0;
+  width: 100%;
+  margin-top: auto;
+  outline: none;
+
+  &:hover,
+  &:active {
+    background: $basic-red;
+    box-shadow: 0px 0px 24px $opacity-red;
+  }
+
+  &:disabled {
+    background: $lighten-grey;
+    box-shadow: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.checkbox__text {
+  font-weight: 500;
+  @include font(14px, 24px);
+  color: $basic-black;
+}
+
+.checkbox__label {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  @include font(14px, 24px);
+  color: $basic-black;
+  padding-left: 31px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $light-grey;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.checkbox__label span {
+  color: $basic-grey;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__check {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $light-grey;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__check {
+  background: url("./Vector.svg"), $basic-orange;;
+  background-repeat: no-repeat;
+  background-position: 2px 4px;
+  border: 1px solid transparent;
+}
+
+.checkbox__input:hover + .checkbox__check {
+  border: 1px solid $basic-black;
+}
+
+.checkbox__input:disabled + .checkbox__check {
+  border: 1px solid $lighten-grey;
+  background-color: $lighten-grey;
+}
