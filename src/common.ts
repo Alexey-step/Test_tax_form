@@ -1,7 +1,7 @@
 import {MONTH, TAX, MAX_TAX_FREE} from "./const";
 
 export const getTaxFree = (item: string): number => {
-  return (Number(item) * MONTH) * TAX
+  return Math.floor((Number(item) * MONTH) * TAX)
 }
 
 export const getAllTaxes = (item: string) => {
